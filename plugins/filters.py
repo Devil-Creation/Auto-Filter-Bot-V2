@@ -175,8 +175,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "start_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("HELP", callback_data="help_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data")],
+                [InlineKeyboardButton("нєℓρ", callback_data="help_data"),
+                    InlineKeyboardButton("αвσυт", callback_data="about_data")],
                 [InlineKeyboardButton("ɢᴀᴛᴀʏᴀ ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Gatayaofficialchannel")]
             ])
 
@@ -190,8 +190,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "help_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("BACK", callback_data="start_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data")],
+                [InlineKeyboardButton("вαςк", callback_data="start_data"),
+                    InlineKeyboardButton("αвσυт", callback_data="about_data")],
                 [InlineKeyboardButton("ѕυρρσят gяσυρ", url="https://t.me/gamehub_req")]
             ])
 
@@ -205,8 +205,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "about_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("START", callback_data="start_data")],
+                [InlineKeyboardButton("вαςк", callback_data="help_data"),
+                    InlineKeyboardButton("ѕтαят", callback_data="start_data")],
                 [InlineKeyboardButton("ѕσυяςє ςσ∂є", url="https://github.com/Master-Oogway-Cyber/Auto-Filter-Bot-V2")]
             ])
 
