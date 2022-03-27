@@ -11,7 +11,7 @@ Bot gives button link to files in connected channels on query !
 
 No need to add filters for your files or movies from now on!
 
-For more click <i>help</i></b>"""
+For more click <i>/help</i></b>"""
 
 
     HELP_MSG = """<b>How to use the bot??</b>
