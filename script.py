@@ -1,67 +1,47 @@
 class script(object):
 
 
-    START_MSG = """ <b>Hey {}
-
-You can call this as an Auto Filter Bot if you like :D
-
-This is Version 2 of Auto Filter Bot
-
-Bot gives button link to files in connected channels on query !
-
-No need to add filters for your files or movies from now on!
-
-For more click <i>/help</i></b>"""
+    START_MSG = """ <b>ʜᴇʟʟᴏ {}
+ʏᴏᴜ ᴄᴀɴ ᴄᴀʟʟ ᴛʜɪꜱ ᴀꜱ ᴀɴ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ɪꜰ ʏᴏᴜ ʟɪᴋᴇ :ᴅ
+ᴛʜɪꜱ ɪꜱ ᴠᴇʀꜱɪᴏɴ 2 ᴏꜰ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ
+ʙᴏᴛ ɢɪᴠᴇꜱ ʙᴜᴛᴛᴏɴ ʟɪɴᴋ ᴛᴏ ꜰɪʟᴇꜱ ɪɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴏɴ Qᴜᴇʀʏ !
+ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴀᴅᴅ ꜰɪʟᴛᴇʀꜱ ꜰᴏʀ ʏᴏᴜʀ ꜰɪʟᴇꜱ ᴏʀ ᴍᴏᴠɪᴇꜱ ꜰʀᴏᴍ ɴᴏᴡ ᴏɴ!
+ꜰᴏʀ ᴍᴏʀᴇ ᴄʟɪᴄᴋ <i>/help</i></b>"""
 
 
-    HELP_MSG = """<b>How to use the bot??</b>
+    HELP_MSG = """<b>ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ??</b>
 
 <i>
-* Add bot to your group with admin rights.
-
-* Add bot to channels which you want to link with <b>all admin rights</b>!
+* ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ.
+* ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ᴄʜᴀɴɴᴇʟꜱ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʟɪɴᴋ ᴡɪᴛʜ <b>ᴀʟʟ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ</b>!
 </i>
 
+<b>ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ - ᴡᴏʀᴋꜱ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ</b>
+(ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀ ᴀᴜᴛʜ ᴜꜱᴇʀ ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ᴜꜱᴇ ᴛʜᴇꜱᴇ ᴄᴏᴍᴍᴀɴᴅꜱ)
+* <code>/ᴀᴅᴅ ᴄʜᴀɴɴᴇʟɪᴅ</code>  -  ʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+ᴏʀ
+* <code>/ᴀᴅᴅ @ᴄʜᴀɴɴᴇʟᴜꜱᴇʀɴᴀᴍᴇ</code> - ʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+<i>ɴᴏᴛᴇ : ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪᴅ ꜰʀᴏᴍ ᴍɪꜱꜱ ʀᴏꜱᴇ ʙᴏᴛ</i>
 
-<b>Bot Commands - Works in Group only</b>
-(You need to be a Auth User in order to use these commands)
+* <code>/ᴅᴇʟ ᴄʜᴀɴɴᴇʟɪᴅ</code>  -  ᴅᴇʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
+ᴏʀ
+* <code>/ᴅᴇʟ @ᴄʜᴀɴɴᴇʟᴜꜱᴇʀɴᴀᴍᴇ</code>  -  ᴅᴇʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
+<i>ɴᴏᴛᴇ : ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟ ᴅᴇᴛᴀɪʟꜱ ʙʏ <code>/ꜰɪʟᴛᴇʀꜱᴛᴀᴛꜱ</code> </i>
 
-* <code>/add channelid</code>  -  Links channel to your group.
-or
-* <code>/add @channelusername</code> - Links channel to your group.
+* <code>/ᴅᴇʟᴀʟʟ</code>  -  ʀᴇᴍᴏᴠᴇꜱ ᴀʟʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ꜰɪʟᴛᴇʀꜱ ꜰʀᴏᴍ ɢʀᴏᴜᴘ!
+<i>ɴᴏᴛᴇ : ᴅᴏɴᴛ ᴀᴅᴅ ᴄᴏᴍᴍᴀɴᴅ ᴅᴇʟᴇᴛᴇ ʙᴏᴛꜱ ɪɴ ɢʀᴏᴜᴘ! ᴏᴛʜᴇʀᴡɪꜱᴇ, ᴅᴇʟᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ ᴡᴏɴᴛ ᴡᴏʀᴋ</i>
 
-<i>NOTE : You can get your channel ID from Miss Rose Bot</i>
+* <code>/ꜰɪʟᴛᴇʀꜱᴛᴀᴛꜱ</code>  -  ᴄʜᴇᴄᴋ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɴᴜᴍʙᴇʀ ᴏꜰ ꜰɪʟᴛᴇʀꜱ.
 
+ɴᴏ ɴᴇᴇᴅ ᴀᴅᴅ ᴇᴀᴄʜ ꜰɪʟᴛᴇʀ ᴀɢᴀɪɴ!
+ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ꜱᴇᴀʀᴄʜ ꜰᴏʀ ʏᴏᴜʀ ꜰɪʟᴇꜱ ᴀɴᴅ ɢɪᴠᴇ ʟɪɴᴋꜱ ᴛᴏ ᴛʜᴀᴛ!
 
-* <code>/del channelid</code>  -  Delinks channel from group
-or
-* <code>/del @channelusername</code>  -  Delinks channel from group
-
-<i>NOTE : You can get connected channel details by <code>/filterstats</code> </i>
-
-
-* <code>/delall</code>  -  Removes all connected channels and filters from group!
-
-<i>Note : Dont add command delete bots in group! Otherwise, delall command wont work</i>
-
-
-* <code>/filterstats</code>  -  Check connected channels and number of filters.
+<b>© @ᴘʀᴏʙ3ᴛᴏʀ</b>"""
 
 
-
-No need add each filter again!
-Bot will automatically search for your files and give links to that!
-
-
-<b>© @prob3tor</b>"""
-
-
-    ABOUT_MSG = """⭕️<b>My Name : Auto Filter Bot V2</b>
-    
-⭕️<b>Creater :</b> <a href='https://t.me/hcn_bots'>HCN Bots</a>
-
-⭕️<b>Language :</b> <code>Python3</code>
-
-⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+    ABOUT_MSG = """💠<b>ᴍʏ ɴᴀᴍᴇ  : ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴠ2</b>
+💠<b>ᴄʀᴇᴀᴛᴇʀ  :</b> <a href='https://t.me/hcn_bots'>ʜᴄɴ ʙᴏᴛꜱ</a>
+💠<b>ʟᴀɴɢᴜᴀɢᴇ :</b> <code>ᴘʏᴛʜᴏɴ3</code>
+💠<b>ʟɪʙʀᴀʀʏ  :</b> <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ 1.0.7</a> 
 
 """
