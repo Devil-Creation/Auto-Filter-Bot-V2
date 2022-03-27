@@ -1,7 +1,7 @@
 class script(object):
 
 
-    START_MSG = """ <b>Hi {}
+    START_MSG = """ <b>Hey {}
 
 You can call this as an Auto Filter Bot if you like :D
 
@@ -30,7 +30,7 @@ For more click <i>/help</i></b>"""
 or
 * <code>/add @channelusername</code> - Links channel to your group.
 
-<i>NOTE : You can get your channel ID from @ChannelidHEXbot </i>
+<i>NOTE : You can get your channel ID from Miss Rose Bot</i>
 
 
 * <code>/del channelid</code>  -  Delinks channel from group
@@ -53,17 +53,15 @@ No need add each filter again!
 Bot will automatically search for your files and give links to that!
 
 
-<b>© @TroJanzHEX</b>"""
+<b>© @prob3tor</b>"""
 
 
     ABOUT_MSG = """⭕️<b>My Name : Auto Filter Bot V2</b>
     
-⭕️<b>Creater :</b> @TroJanzHEX
+⭕️<b>Creater :</b> <a href='https://t.me/hcn_bots'>HCN Bots</a>
 
 ⭕️<b>Language :</b> <code>Python3</code>
 
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
-
-⭕️<b>Tutorial Video :</b> <a href='https://youtu.be/KQVYQAOsFYY'>Video Link</a> 
 
 """
