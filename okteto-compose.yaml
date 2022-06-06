@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      - TG_BOT_TOKEN-${TG_BOT_TOKEN}
+      - API_HASH-${API_HASH}
+      - APP_ID-${APP_ID}
+      - TG_USER_SESSION-${TG_USER_SESSION}
+      - AUTH_USERS-${AUTH_USERS}
+      - DATABASE_URI-${DATABASE_URI}
+      - DATABASE_NAME-${DATABASE_NAME}
+      - DOC_SEARCH-${DOC_SEARCH}
+      - VID_SEARCH-${VID_SEARCH}
+      - MUSIC_SEARCH-${MUSIC_SEARCH}
+      
